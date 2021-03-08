@@ -1,1 +1,1 @@
-A simple project for test Lazy-Loading 
+A simple project for testing Lazy-Loading 
