@@ -5,11 +5,7 @@ import { ContactComponent } from './contact.component';
 const routes: Routes = [
   {
     path: '', component: ContactComponent, children: [
-      {
-        path: '',
-        loadChildren: () => import(`./mailing/mailing.module`)
-          .then(m => m.MailingModule)
-      },
+      
       {
         path: 'mailing',
         loadChildren: () => import(`./mailing/mailing.module`)
