@@ -11,9 +11,25 @@ const routes: Routes = [
       .then(mod => mod.ContactModule)
   },
   {
+    path: 'menu',
+    loadChildren: () => import('./modules/general/menu/menu.module')
+      .then(mod => mod.MenuModule)
+  },
+  {
+    path: 'delivery-page',
+    loadChildren: () => import('./modules/general/delivery-page/delivery-page.module')
+      .then(mod => mod.DeliveryPageModule)
+  },
+  
+  {
     path: 'about',
     loadChildren: () => import('./modules/general/about/about.module')
       .then(mod => mod.AboutModule)
+  },
+  {
+    path: 'employees-list',
+    loadChildren: () => import('./modules/general/employees-list/employees-list.module')
+      .then(mod => mod.EmployeesListModule)
   },
   {
     path: 'signin',

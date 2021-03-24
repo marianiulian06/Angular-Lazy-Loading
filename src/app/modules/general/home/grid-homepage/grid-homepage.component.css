@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+.row h1, h6{
+    text-align: center;
+}
+
+h1{
+    font-family: 'Nunito', sans-serif;
+    border-bottom: 1px solid rgb(255, 212, 212);
+
+    
+}
+
+
+.row {
+    border: 1px solid rgb(255, 233, 233);
+    border-radius: 20px;
+    background-color: rgb(252, 247, 239);
+   
+    
+}
+
+.fa-cart-arrow-down {
+    color: black;
+    font-size:30px;
+}
+
+.fa-download{
+    color: black;
+    font-size:25px;
+}
+
+img {
+    width: 100%;
+}
+
+h4{
+    font-family: 'Nunito', sans-serif;
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .col {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    
+
+    
+
+}
+
+@media only screen and (max-width: 320px){
+
+    .row {
+        margin-top: 100px;
+        
+    }
+
+
+}
