@@ -1,3 +1,37 @@
-body{
-    min-width: 100vh;
+.container{
+    
+    background-color:rgba(233, 233, 233, 0.61);
+    border-radius: 10px;
+    padding:30px;
+}
+
+
+@media only screen and (max-width: 700px){
+
+    .container{
+        width:80%;
+    }
+
+    h1 {
+        font-size:30px;
+    }
+
+   select, input{
+       font-size: 15px;
+   }
+
+}
+
+
+
+
+
+@media only screen and (max-width: 490px){
+
+
+h1 {
+    font-size: 20px;
+    margin-bottom:30px;
+}
+
 }

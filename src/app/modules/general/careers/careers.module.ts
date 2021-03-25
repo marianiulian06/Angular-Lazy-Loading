@@ -5,7 +5,7 @@ import { CareersRoutingModule } from './careers-routing.module';
 import { BannerCareersComponent } from './banner-careers/banner-careers.component';
 import { CareersComponent } from './careers.component';
 import { FormsModule } from '@angular/forms';
-import {  HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -17,6 +17,7 @@ import {  HttpClientModule } from '@angular/common/http';
     CareersRoutingModule,
     FormsModule,
     HttpClientModule
+
   ]
 })
 export class CareersModule { }

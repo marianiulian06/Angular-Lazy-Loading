@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { ContactRoutingModule } from './contact-routing.module';
 import { ContactComponent } from './contact.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -11,7 +13,9 @@ import { ContactComponent } from './contact.component';
   ],
   imports: [
     CommonModule,
-    ContactRoutingModule
+    ContactRoutingModule,
+    FormsModule,
+    HttpClientModule
   ]
 })
 export class ContactModule { }

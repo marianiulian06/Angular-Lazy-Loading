@@ -1,4 +1,123 @@
 <app-banner-careers></app-banner-careers>
 
+<div class = "container"> 
+
+        <div class = "container-fluid ">
+            <h1>Formular de angajare </h1>
+        </div>
+
+          <form #userForm ="ngForm" (ngSubmit) = "onSubmit()" novalidate >
+            <div class="form-group">
+              <label>Nume *</label>
+              <input
+              type="text"  
+              class="form-control"  
+              placeholder="Nume"
+              required 
+              [(ngModel)] = "userModel.name" 
+              name= "name"
+              #name = "ngModel"
+              >
+        
+              <div 
+              class = "alert alert-danger"
+              *ngIf = "name.touched && !name.valid"
+              >
+                Numele este obligatoriu!
+               
+              </div>
+        
+            </div>
+        
+            
+            
+            <div class="form-group">
+                <label>Prenume *</label>
+                <input 
+                type="text"  
+                class="form-control"  
+                placeholder="Prenume"
+                required 
+                [(ngModel)] = "userModel.firstName" 
+                name= "firstName"
+                #firstName = "ngModel" >
+                <div 
+                class = "alert alert-danger" 
+                *ngIf = "firstName.touched && !firstName.valid"> 
+                  Prenumele este obligatoriu !
+                </div>
+              </div>
+        
+        
+        
+        
+              <div class="form-group">
+                <label>Email *</label>
+                <input 
+                type="email" 
+                class="form-control"  
+                placeholder="nume@exemplu.com"
+                required 
+                [(ngModel)] = "userModel.email" 
+                name= "email"
+                #email = "ngModel" >
+                <div 
+                class = "alert alert-danger" 
+                *ngIf = "email.touched && !email.valid"> 
+                  Email obligatoriu !
+                </div>
+                
+              </div>
+        
+              <div class="form-group">
+                <label for="inputAddress">Adresa *</label>
+                <input type="text" 
+                class="form-control" 
+                placeholder="Bd.Bucuresti Nr 39" 
+                required 
+                [(ngModel)] = "userModel.adress" 
+                name= "adress"
+                #adress = "ngModel" >
+                <div 
+                class = "alert alert-danger" 
+                *ngIf = "adress.touched && !adress.valid"> 
+                  Adresa obligatorie !
+                </div>
+        
+              </div>
+        
+              <div class="form-group">
+                <label>Oras</label>
+                <input type="text" 
+                class="form-control"
+                required  
+                placeholder="Ploiesti"
+                required
+                [(ngModel)] = "userModel.city" 
+                name= "city"
+                #city = "ngModel" > 
+              </div>
+        
+            <div class="form-group">
+             <label>Aplic pentru postul de: *</label> 
+              <select
+              required
+              #chooseJob = "ngModel"
+              [class.is.invalid] = "chooseJob.invalid && chooseJob.touched"
+               class="custom-select"
+               name = "chooseJob"
+               [(ngModel)] = "userModel.chooseJob"
+               >
+               <small class= "text-danger" [class.d-none] = "chooseJob.valid || chooseJob.untouched"> Alege un potential job </small>
+                <option>Alege...</option>
+                <option *ngFor="let job of jobs"> {{ job }} </option>
+              </select>
+            </div>
+        
+            <button type = "submit" [disabled]="userForm.form.invalid" class="btn btn-dark">Trimite!</button> <!--butonul se dezactiveaza daca formul este invalid  -->
+        
+          </form>
 
 
+</div>
+<br> <br><br> <br><br> <br><br> <br><br> <br>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserContact } from './UserContact';
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
+  userModel = new UserContact('Marian','Iulian','nume@test.com','exemplu de text');
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSubmit(){
+    console.log(this.userModel);
   }
 
 }
