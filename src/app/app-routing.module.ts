@@ -27,6 +27,11 @@ const routes: Routes = [
       .then(mod => mod.AboutModule)
   },
   {
+    path: 'careers',
+    loadChildren: () => import('./modules/general/careers/careers.module')
+      .then(mod => mod.CareersModule)
+  },
+  {
     path: 'employees-list',
     loadChildren: () => import('./modules/general/employees-list/employees-list.module')
       .then(mod => mod.EmployeesListModule)

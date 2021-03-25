@@ -8,7 +8,9 @@ import { BannerAboutComponent } from './banner-about/banner-about.component';
 
 
 @NgModule({
-  declarations: [AboutComponent, BannerAboutComponent],
+  declarations: [
+    AboutComponent, 
+    BannerAboutComponent],
   imports: [
     CommonModule,
     AboutRoutingModule

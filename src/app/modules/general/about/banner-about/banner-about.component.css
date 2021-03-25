@@ -1,0 +1,52 @@
+
+
+h1{
+    font-size:100px;
+    margin-top:150px;
+    margin-bottom:150px;
+    
+}
+
+.container{
+    text-align: center;
+    
+}
+
+.jumbotron{
+   
+   
+    background-image: url('https://image.freepik.com/free-photo/wooden-board-empty-table-top-blurred-background_1253-1584.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    color:black;
+    font-size: auto;
+   
+    
+  
+
+}
+
+.container{
+    background-color:rgba(250, 235, 215, 0.459);
+    padding:10px;
+    border-radius: 10px;
+    
+}
+
+
+@media only screen and (max-width: 998px){
+
+    h1{
+        font-size:50px;
+     }
+
+
+}
+
+@media only screen and (max-width: 500px){
+
+    h1{
+        font-size:35px;
+     }
+
+}

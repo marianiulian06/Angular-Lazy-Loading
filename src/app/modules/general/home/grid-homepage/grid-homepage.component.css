@@ -11,6 +11,7 @@ h1{
 }
 
 
+
 .row {
     border: 1px solid rgb(255, 233, 233);
     border-radius: 20px;
@@ -45,18 +46,32 @@ h4{
         margin-top: 40px;
     }
 
+    .container{
+        width: 80%;
+    }
+
+    h1{
+        font-size:25px;
+    }
+
+    h6,h4, button{
+        font-size:13px;
+    }
     
 
     
 
 }
 
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 350px){
 
     .row {
         margin-top: 100px;
         
     }
-
+    
+    button {
+        font-size: 8px;
+    }
 
 }

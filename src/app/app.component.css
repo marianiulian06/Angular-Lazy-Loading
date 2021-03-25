@@ -1,0 +1,10 @@
+
+
+
+@media only screen and (max-width: 350px){
+
+    img,span, .collapse{
+        font-size: 10px;
+    }
+
+}

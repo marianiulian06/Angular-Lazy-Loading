@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular-Lazy-Loading';
+  title = "McDonald's Restaurant";
+ 
 }
+
+ 

@@ -8,17 +8,20 @@ import { BannerComponent } from './modules/general/home/banner/banner.component'
 import { GridHomepageComponent } from './modules/general/home/grid-homepage/grid-homepage.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NotFoundComponent,
     BannerComponent,
-    GridHomepageComponent
+    GridHomepageComponent,
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+
     
   ],
   providers: [],
