@@ -1,0 +1,105 @@
+.jumbotron {
+    text-align:center;
+    margin-bottom: 0px;
+    min-height: 100vh;
+    background-image: url('https://s1.1zoom.me/b5353/683/Fast_food_Hamburger_Vegetables_Bottle_530823_1920x1080.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+.jumbotron .text {
+    color:black;
+    background-color:rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 10px;    
+    
+    
+}
+
+h1 {
+    font-size:100px;
+    text-shadow: 1px 1px 2px;
+   
+    
+}
+
+.container {
+    text-align:center;
+    margin-top: 15%;
+}
+
+
+@media screen and (max-width: 1210px) {
+
+    .container {
+      
+        margin-top: 20%;
+    }
+
+}
+
+@media screen and (max-width: 1210px) {
+
+    .container {
+      
+        margin-top: 30%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .container h1{
+       font-size:70px;
+       
+    }
+
+    .container {
+        margin-top: 50%;
+    }
+
+    
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+
+    .container {
+        margin-top: 70%;
+    }
+
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .jumbotron{
+        min-height: 50vh;
+    }
+
+    .container {
+        margin-top: 20%;
+    }
+
+    .container h1{
+        font-size:50px;
+    } 
+
+}
+
+
+@media screen and (max-width: 237px) {
+
+    .container h1{
+        font-size:30px;
+    } 
+
+
+}

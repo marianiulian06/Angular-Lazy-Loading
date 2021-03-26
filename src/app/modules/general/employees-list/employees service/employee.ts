@@ -1,5 +1,7 @@
 export interface IEmployee{
     id: number,
     name: string,
-    age: number
+    age: number,
+    job:string
+    
 }

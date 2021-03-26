@@ -1,12 +1,27 @@
-<h2> Afiseaza lista  </h2>
 
-<div class="card" *ngFor ="let item of menu" > 
-
-
-    <div class="card-body">
-        <p class="card-text">{{item.name}}</p>
-        <p class="card-text">{{item.description}}</p>
+<br> <br>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+          <div class = "text"> 
+              <h1>Mai jos vezi produsele cu alergeni</h1>
+          </div>         
       </div>
+    </div>
+
+<div class= "container" > 
+    <div class="card" *ngFor ="let item of menu" > 
 
 
-</div>
+        <div class="card-body">
+            <p class="card-text-name"> <strong>{{item.name}} </strong> </p>
+            <p class="card-text-description">{{item.description}}</p>
+          </div>
+
+
+    </div>
+
+  </div>
+
+  
+
+

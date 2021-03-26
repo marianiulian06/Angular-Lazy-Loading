@@ -6,13 +6,15 @@ import { MenuListComponent } from './menu-list/menu-list.component';
 import { MenuComponent } from './menu.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MenuService } from './menu.service';
+import { MenuListBannerComponent } from './menu-list/menu-list-banner/menu-list-banner.component';
 
 
 @NgModule({
   declarations: [
     MenuComponent,
     MenuDescriptionComponent,
-    MenuListComponent],
+    MenuListComponent,
+    MenuListBannerComponent],
   imports: [
     CommonModule,
     MenuRoutingModule,

@@ -1,19 +1,21 @@
+<app-menu-list-banner></app-menu-list-banner>
 
-<div class="card" *ngFor ="let item of menu"> 
-
-
-    <div class="card-body">
-        <h5 class="card-title">{{item.name}}</h5>
-        <h6 class="card-subtitle mb-2"> <img [src] = "myimage"> </h6>
-        <h4 class="card-text"> {{item.content}} </h4>
-        <p class="card-text"><strong> {{item.description}} </strong> </p>
+<div class = "container"> 
+  
+  <br>
+  <div class="card" *ngFor ="let item of menu"> 
 
 
-       <p class="card-text">{{item.price}}</p>
-        <a href="#" class="btn btn-info">Livreaza prin ComandaMancare.ro</a>
-      </div>
-
-
-</div>  <!-- task: sa fac research cum sa pun o imagine de fundal corespunzatoare ficarui meniu (card)   -->
-
-
+        <div class="card-body">
+                  <h5 class="card-title">{{item.name}}</h5>
+                  <h6 class="card-subtitle mb-2"> <img [src] ="myimage"> </h6>
+                  <h4 class="card-text"> {{item.content}} </h4>
+                  <p class="card-text"><strong> {{item.description}} </strong> </p>
+                   <p class="card-text">{{item.price}}</p>
+                  <a href="#" class="btn btn-info">Livreaza prin ComandaMancare.ro</a>
+          
+       </div>
+         
+         
+  </div> 
+</div>

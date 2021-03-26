@@ -3,15 +3,19 @@
 <br><br><br><br><br>
 
 <div class="container"> 
-    <h2 class ="card bg-dark text-white text-center"> Angajati: </h2>
+    <h2 class ="card bg-dark text-white text-center"> Angajati </h2>
 
     <br>
     
     <div class="card bg-light text-dark"  *ngFor="let employee of employees">
-        <div class="card-body"><strong> Nume: </strong> {{employee.name}} , <strong>Varsta:</strong> {{employee.age}}   </div>
+        <div class="card-body">
+          <i class = " fa fa-user"></i> <strong>  Nume: </strong> {{employee.name}} , <strong>Varsta:</strong> {{employee.age}}  ,  <strong>  Functia: </strong> {{employee.job}}
+         </div>
+        
       </div>
     </div>
 
+    
 
 
  
