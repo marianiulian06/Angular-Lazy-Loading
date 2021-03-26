@@ -1,7 +1,7 @@
 Deploy pe Firebase : https://restaurant-de546.web.app/
 
 
-Pentru: *Componente Reutilizabile Umbraco:
+Pentru: *Componente Reutilizabile:
 
 - Am creat o componenta <app-our-offers>
 - Am utilizat-o in template-ul home.component ca si copil
