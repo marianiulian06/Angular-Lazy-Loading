@@ -1,5 +1,18 @@
 
+.p-3{
+    
+    color:#fff;
+}
 
+@media only screen and (max-width: 960px){
+
+        .nav-item {
+            font-size: 13px;
+        }
+
+        
+
+}
 
 @media only screen and (max-width: 350px){
 
